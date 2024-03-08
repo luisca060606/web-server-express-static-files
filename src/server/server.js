@@ -1,7 +1,12 @@
-const express = require('express')
-const path = require('path')
+// import ES6
+import express from 'express'
+import path from 'path'
 
-const startServer = (options) => {
+// past import
+// const express = require('express')
+// const path = require('path')
+
+export const startServer = (options) => {
 	const { port, public_path='public' } = options
 	const app = express()
 	// para usar middlewares en express es con use
@@ -17,6 +22,7 @@ const startServer = (options) => {
 	})
 }
 
-module.exports = {
-	startServer
-}
+// past export
+// module.exports = {
+// 	startServer
+// }
